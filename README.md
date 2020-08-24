@@ -153,8 +153,8 @@ Source Files:
 
 ## Graph
 ### ResNet20
-![resnet32_accuracy](https://user-images.githubusercontent.com/24911666/90999282-33678700-e601-11ea-9649-d8db5f198548.png)
-![resnet32_loss](https://user-images.githubusercontent.com/24911666/90999285-3498b400-e601-11ea-9d19-1c2942264421.png)
+![resnet20_accuracy](https://user-images.githubusercontent.com/24911666/91011510-6456b480-e61f-11ea-995a-6937c358e9e3.png)
+![resnet20_loss](https://user-images.githubusercontent.com/24911666/91011513-64ef4b00-e61f-11ea-9ab4-4249723ceb17.png)
 
 ### ResNet32
 ![resnet32_accuracy](https://user-images.githubusercontent.com/24911666/90999282-33678700-e601-11ea-9649-d8db5f198548.png)
