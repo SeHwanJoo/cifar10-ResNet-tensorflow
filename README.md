@@ -1,8 +1,5 @@
 # cifar10-ResNet
 
-## Description
-
-
 ## Training
 Trained using two approaches for 250 epochs:
 1. Keeping the base model's layer fixed, and
@@ -124,35 +121,53 @@ Trained using two approaches for 250 epochs:
 
 
 ## Hyper parameter
-    training_epochs = 250
+    training_epochs = 165
     batch_size = 128
     learning_rate = 0.1
     momentum = 0.9
-    lr_decay = 1e-6
-    lr_drop = 20
+    weight_decay = 1e-4,
+    batch_norm_momentum = 0.99,
+    batch_norm_epsilon = 1e-3,
+    batch_norm_center = True,
+    batch_norm_scale = True
 
 
 
-#### Files
+### Files
 Source Files:
 
-- vgg16.py
-    - load_images() : load cifar-10 images (train, test)
-    - normalization() : normalization cifar-10 images
-    - ResNetUnit : create multiple shortcut layer with Conv2D, BatchNormalization,
-    - ResNetModel  : create deep learning model based vgg16
-    - train() : train VGG16Model with cifar-10 images
-    - main() : main function that Initial images and model then, call train function
-    
-    
-- cifar10-resnet.h5 : trained model's weights
+- resnet.py : main function that Initial images and model then, train model
+- utils.py : use_gpu, normalization, load_images, build_optimizer    
+- model.py : ResNet model, ResNetUnit
+- outputs : graph, trained_model (h5 file)
 
-
+## Accuracy
 |Model|Validation Accuracy
 |:------:|:---:|
 |[VGG-16](https://github.com/SeHwanJoo/cifar10-vgg16)|93.15%|
-|[ResNet-20](https://github.com/SeHwanJoo/cifar10-ResNet)||
-|[ResNet-32](https://github.com/SeHwanJoo/cifar10-ResNet)||
-|[ResNet-44](https://github.com/SeHwanJoo/cifar10-ResNet)||
-|[ResNet-56](https://github.com/SeHwanJoo/cifar10-ResNet)||
-|[ResNet-110](https://github.com/SeHwanJoo/cifar10-ResNet)||
+|[ResNet-20](https://github.com/SeHwanJoo/cifar10-ResNet)|91.52%|
+|[ResNet-32](https://github.com/SeHwanJoo/cifar10-ResNet)|92.53%|
+|[ResNet-44](https://github.com/SeHwanJoo/cifar10-ResNet)|93.16%|
+|[ResNet-56](https://github.com/SeHwanJoo/cifar10-ResNet)|93.21%|
+|[ResNet-110](https://github.com/SeHwanJoo/cifar10-ResNet)|93.90%|
+
+## Graph
+### ResNet20
+![resnet32_accuracy](https://user-images.githubusercontent.com/24911666/90999282-33678700-e601-11ea-9649-d8db5f198548.png)
+![resnet32_loss](https://user-images.githubusercontent.com/24911666/90999285-3498b400-e601-11ea-9d19-1c2942264421.png)
+
+### ResNet32
+![resnet32_accuracy](https://user-images.githubusercontent.com/24911666/90999282-33678700-e601-11ea-9649-d8db5f198548.png)
+![resnet32_loss](https://user-images.githubusercontent.com/24911666/90999285-3498b400-e601-11ea-9d19-1c2942264421.png)
+
+### ResNet44
+![resnet44_accuracy](https://user-images.githubusercontent.com/24911666/90999286-3498b400-e601-11ea-8b8d-86c915ae8f69.png)
+![resnet44_loss](https://user-images.githubusercontent.com/24911666/90999287-35314a80-e601-11ea-8227-21318dc70bc1.png)
+
+### ResNet56
+![resnet56_accuracy](https://user-images.githubusercontent.com/24911666/90999289-35314a80-e601-11ea-8cee-5debd64a6cd5.png)
+![resnet56_loss](https://user-images.githubusercontent.com/24911666/90999291-35c9e100-e601-11ea-8c3d-da1a5796c2c3.png)
+
+###ResNet110
+![resnet110_accuracypng](https://user-images.githubusercontent.com/24911666/90999293-35c9e100-e601-11ea-8734-bbbb26a7770b.png)
+![resnet110_loss](https://user-images.githubusercontent.com/24911666/90999294-36627780-e601-11ea-9e04-048b285f94b7.png)
