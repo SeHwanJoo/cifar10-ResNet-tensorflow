@@ -49,7 +49,6 @@ if __name__ == '__main__':
     # model = model.ResNetModel(num_layers=56)
     # model = model.ResNetModel(num_layers=110)
 
-
     model.build_graph(train_images.shape)
     model.summary()
     optimizer = build_optimizer(learning_rate=learning_rate, momentum=momentum)
