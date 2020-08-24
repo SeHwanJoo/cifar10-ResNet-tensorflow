@@ -1,7 +1,7 @@
 # cifar10-ResNet
 
 ## Training
-Trained using two approaches for 250 epochs:
+Trained using two approaches for 165 epochs:
 1. Keeping the base model's layer fixed, and
 2. By training end-to-end
 
