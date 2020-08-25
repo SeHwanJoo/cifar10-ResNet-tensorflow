@@ -145,11 +145,11 @@ Source Files:
 |Model|Validation Accuracy
 |:------:|:---:|
 |[VGG-16](https://github.com/SeHwanJoo/cifar10-vgg16)|93.15%|
-|[ResNet-20](https://github.com/SeHwanJoo/cifar10-ResNet)|91.52%|
-|[ResNet-32](https://github.com/SeHwanJoo/cifar10-ResNet)|92.53%|
-|[ResNet-44](https://github.com/SeHwanJoo/cifar10-ResNet)|93.16%|
-|[ResNet-56](https://github.com/SeHwanJoo/cifar10-ResNet)|93.21%|
-|[ResNet-110](https://github.com/SeHwanJoo/cifar10-ResNet)|93.90%|
+|[ResNet-20](https://github.com/SeHwanJoo/cifar10-ResNet-tensorflow)|91.52%|
+|[ResNet-32](https://github.com/SeHwanJoo/cifar10-ResNet-tensorflow)|92.53%|
+|[ResNet-44](https://github.com/SeHwanJoo/cifar10-ResNet-tensorflow)|93.16%|
+|[ResNet-56](https://github.com/SeHwanJoo/cifar10-ResNet-tensorflow)|93.21%|
+|[ResNet-110](https://github.com/SeHwanJoo/cifar10-ResNet-tensorflow)|93.90%|
 
 ## Graph
 ### ResNet20
