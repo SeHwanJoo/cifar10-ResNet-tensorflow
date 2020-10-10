@@ -1,5 +1,8 @@
 # cifar10-ResNet
 
+## version
+python : 3.7
+tensorflow : 2.x
 ## Training
 Trained using two approaches for 165 epochs:
 1. Keeping the base model's layer fixed, and
