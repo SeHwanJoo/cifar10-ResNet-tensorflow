@@ -12,7 +12,7 @@ if __name__ == '__main__':
     print(tf.__version__)
     print(keras.__version__)
 
-    use_gpu()
+    # use_gpu()
 
     training_epochs = 165
     batch_size = 128
